@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "xsuite build",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "interact:devnet": "CHAIN=devnet tsx interact/index.ts",
+    "interact:testnet": "CHAIN=testnet tsx interact/index.ts",
+    "interact:mainnet": "CHAIN=mainnet tsx interact/index.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^18.16.18",
+    "commander": "^11.1.0",
+    "tsx": "^3.14.0",
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.6",
+    "xsuite": "0.0.42"
+  }
+}
